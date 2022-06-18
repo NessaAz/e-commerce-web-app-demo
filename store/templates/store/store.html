@@ -1,0 +1,43 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+<img src="{% static 'images/cart.png' %}" alt=""> -->
+{% block content %}
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="thumbnail" src="{% static 'images/cart.png' %}" alt="prod">
+            <div class="box-element product">
+                <h6><strong>product</strong></h6>
+                <hr>
+                <button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4 style=" float: right"><strong>kes 20</strong></h4>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <img class="thumbnail" src="{% static 'images/cart.png' %}" alt="prod">
+            <div class="box-element product">
+                <h6><strong>product</strong></h6>
+                <hr>
+                <button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4 style=" float: right"><strong>kes 20</strong></h4>
+                </div>
+        </div>
+
+        <div class="col-lg-4">
+            <img class="thumbnail" src="{% static 'images/cart.png' %}" alt="prod">
+            <div class="box-element product">
+                <h6><strong>product</strong></h6>
+                <hr>
+                <button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4 style="float: right"><strong>kes 20</strong></h4>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
