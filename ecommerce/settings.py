@@ -1,9 +1,15 @@
 import os
 from pathlib import Path
+import cloudinary, cloudinary.api,cloudinary.uploader
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+cloudinary.config( 
+  cloud_name = 'nessaaz', 
+  api_key = '267196223421864',
+  api_secret = 'ck1X-h5xdDAON2PIc4xaBjuJOcU',
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
